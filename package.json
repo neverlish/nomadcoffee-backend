@@ -1,0 +1,23 @@
+{
+  "scripts": {
+    "dev": "nodemon --exec babel-node server.js",
+    "migrate": "npx prisma migrate dev --preview-feature",
+    "studio": "npx prisma studio"
+  },
+  "dependencies": {
+    "@graphql-tools/load-files": "^6.6.1",
+    "@graphql-tools/merge": "^8.4.1",
+    "@graphql-tools/schema": "^9.0.19",
+    "@prisma/client": "^4.13.0",
+    "apollo-server": "^2.25.2",
+    "dotenv": "^16.0.3",
+    "graphql": "^15.4.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/node": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "nodemon": "^2.0.22",
+    "prisma": "^4.13.0"
+  }
+}
