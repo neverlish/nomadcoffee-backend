@@ -10,10 +10,6 @@ export default gql`
       password: String!
       avatarURL: String!
       githubUsername: String!
-    ): CreateAccountResponse
-  }
-  type CreateAccountResponse {
-    ok: Boolean!
-    error: String
+    ): MutationResponse!
   }
 `;
