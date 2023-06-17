@@ -17,7 +17,7 @@ export const uploadToS3 = async (file, userId, folderName) => {
       Bucket: "instaclone-uploads-neverlish",
       Key: objectName,
       ACL: "public-read",
-      Body: fs.createReadStream(readStream._writeStream.path) ,
+      Body: fs.createReadStream(readStream._writeStream._path) ,
     })
     .promise();
   return Location;
